@@ -1,0 +1,314 @@
+* {
+	box-sizing: border-box; */
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	position:relative;
+	background-color:#E8E3D3;
+}
+
+
+nav a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+  }
+
+ 
+nav a:hover, :active  {
+	color: rgb(102, 101, 101);
+	text-decoration: none;
+}
+
+
+a {
+	color: rgb(133, 133, 133);
+	text-decoration: none;
+  }
+
+ 
+a:hover, :active  {
+	color: rgb(102, 101, 101);
+	text-decoration: none;
+}
+
+ul {
+	padding: 0 1em;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	color: white;
+	background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.3),rgb(0, 0, 0, 0.0001));
+	margin: 0;
+	padding: 2em 8%;
+	position: absolute;
+	width: 100%;
+	z-index: 10000000;
+}
+
+nav h1 {
+	font-size: 1.5em;
+	margin: 0;
+}
+
+nav h2 {
+	font-size: 1em;
+	margin: 0;
+}
+
+nav ul {
+	display: flex;
+	align-items: flex-end;
+	list-style: none;
+	justify-content: space-around;
+	margin: 0;
+	flex-wrap: wrap;   
+}
+
+nav ul li {
+	padding: 0 0.5em;
+}
+
+
+  .p-menu1{
+	 height: 100%;
+  }
+  
+  .margin-zero{
+	margin-top: 0;
+}
+  
+  /* Hamburger */
+  .hamburger1 {
+	height: 45px;
+	margin: 10px;
+	display: -ms-grid;
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	justify-items: center;
+	z-index: 120;
+  }
+  
+  .hamburger1 div {
+	background-color: rgb(175, 175, 175);
+	position: relative;
+	width: 40px;
+	height: 5px;
+	margin-top: 7px;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+  }
+  
+  #toggle1 {
+	display: none;
+  }
+  
+  #toggle1:checked + .hamburger1 .top {
+	-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+	margin-top: 22.5px;
+  }
+  
+  #toggle1:checked + .hamburger1 .meat {
+	-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+	margin-top: -5px;
+  }
+  
+  #toggle1:checked + .hamburger1 .bottom {
+	-webkit-transform: scale(0);
+			transform: scale(0);
+  }
+  
+  #toggle1:checked ~ .menu1 {
+	height: 340px;
+  }
+  
+  
+  /* Menu */
+  .menu1 {
+	width: 100%;
+	background-color: #000000;
+	margin: 0;
+	display: -ms-grid;
+	display: grid;
+	grid-template-rows: 1fr repeat(4, 0.5fr);
+	grid-row-gap: 25px;
+	padding: 0;
+	list-style: none;
+	clear: both;
+	width: auto;
+	text-align: center;
+	height: 0px;
+	overflow: hidden;
+	transition: height .4s ease;
+	z-index: 120;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+  }
+  
+  .menu1 a:first-child {
+	margin-top: 40px;
+  }
+  
+  .menu1 a:last-child {
+	margin-bottom: 40px;
+  }
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: right;
+	height: 65vh;
+	background-image: url(./assets/HeroImage.jpg);
+	margin: 0;
+	background-size:cover;
+	background-position: bottom;
+	background-attachment: fixed ; 
+}
+
+
+.heroQuote {
+	position: absolute;
+	padding: 0em 8%;
+	color: black;
+	font-size: 1.1em;
+	}
+  
+  .heroQuote h1 {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.2em;
+  }
+
+  .title {
+	  display: flex;
+	  flex-direction: column;
+	  align-content: center;
+
+  }
+
+.darkerFooter {
+
+	background-color:#cfc9b5;
+	height: 10em;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	font-size: 1.5em;
+}
+
+.logos {
+	display: flex;
+	width: 25%;
+	align-content:center;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+.styling {
+	padding: 3em 8%;
+	color: black;
+}
+
+.styling h2 {
+	padding: 0em 0 2% 0;
+	
+}
+
+
+
+
+.TwoGridEqual {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4em;
+}
+
+.TwoGridEqual img {
+	width: 100%;
+}
+
+
+.zoom {
+	transition: transform .2s; /* Animation */
+  }
+  
+.zoom:hover {
+	transform: scale(1.06); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+
+
+.btn-floating-container {
+	right: 50px;
+	bottom: 50px;
+	position: fixed;
+}
+
+.btn-floating {
+	width: 50px;
+	height: 50px;
+	border-radius: 15%;
+	box-shadow: 0 10px 15px 0 rgba(114, 110, 110, 0.2), 0 1px 1px 0 rgba(110, 107, 107, 0.2);
+	border: 2px solid rgba(117, 112, 112, 0.075);
+	text-align: center;
+	padding: 0px;
+	font-size: 24px;
+	color: white;
+	background-color: rgb(109, 101, 101);
+}
+
+.hamburger  {
+	display: none;
+}
+
+
+
+@media all and (max-width: 900px){
+
+
+
+	
+
+}
+
+
+@media all and (max-width: 630px){
+	.hamburger  {
+		display: flex;
+	}
+
+	.menue  {
+		display: none;
+	}
+
+	.TwoGridEqual {
+		
+		grid-template-columns: 1fr;
+		gap: 4em;
+	}
+
+	.TwoGridEqual img {
+		width: 100%;
+	}
+
+	nav ul {
+		display: flex;
+		align-items: center;
+		list-style: none;
+		justify-content: flex-end;
+		margin: 0;
+		flex-wrap: wrap;   
+	}
+
+
+}
+
